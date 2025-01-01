@@ -16,9 +16,6 @@
     "release:test": "yarn release --prerelease alpha"
   },
   "bin": "./bin/index.js",
-  "browser": {
-    "./src/bplist-parser/index.js": "./src/bplist-parser/browser.js"
-  },
   "keywords": [
     "ipa",
     "apk",
@@ -29,10 +26,10 @@
   "author": "Quincy Chen <mail@chenquincy.cn>",
   "license": "MIT",
   "dependencies": {
-    "bplist-parser": "^0.2.0",
+    "big-integer": "^1.6.52",
     "bytebuffer": "^5.0.1",
-    "commander": "^7.2.0",
     "cgbi-to-png": "^1.0.7",
+    "commander": "^7.2.0",
     "isomorphic-unzip": "^1.1.5",
     "plist": "^3.0.1"
   },
