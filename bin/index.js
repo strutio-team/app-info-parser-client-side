@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const { program } = require('commander')
-const fs = require('fs')
 const path = require('path')
 const AppInfoParser = require('../src')
 
@@ -20,7 +19,6 @@ if (options.filePath) {
   const parser = new AppInfoParser(jsPath)
   parser.parse().then(result => {
     const outputPath = options.outputPath || './result.json'
-    fs.writeFileSync(outputPath, JSON.stringify(result, null, 2))
   })
 }
 if (Object.keys(options).length === 0) {
